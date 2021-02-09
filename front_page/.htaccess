@@ -1,0 +1,11 @@
+Redirect 302 /linkedin https://linkedin.com/in/henrique-mello
+Redirect 302 /instagram https://instagram.com/mmhenri
+Redirect 302 /facebook https://facebook.com/henriquemedina.mello
+Redirect 302 /email mailto:contact@henriquemello.com
+Redirect 302 /snapchat https://www.snapchat.com/add/mmhenri
+Redirect 302 /twitter http://twitter.com/mmhenrimm
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME}.pdf -f
+RewriteRule !.*\.pdf$ %{REQUEST_FILENAME}.pdf [QSA,L]
